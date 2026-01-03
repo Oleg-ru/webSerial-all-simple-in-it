@@ -6,14 +6,29 @@
 </head>
 <body>
 <form action="http://localhost:8080" method="post" id="form">
-    <input type="text" name="login" maxlength="4">
-    <input type="color"/>
-
-    <input type="radio" name="he"/>
-    <input type="radio" name="he"/>
-    <input type="radio" name="he"/>
-
-    <input type="search">
+<fieldset>
+    <legend>Данные для регистрации</legend>
+    <label>
+        Имя:
+        <input type="text" name="name" maxlength="66">
+    </label>
+    <label>
+        Email:
+        <input type="text" name="email" maxlength="100">
+    </label>
+</fieldset>
+    <fieldset>
+        <legend>Поделитесь информацией</legend>
+        <p>
+            <label for="hear-about">Как вы узнали о нас?</label>
+            <select name="referable" id="hear-about">
+                <option value="google">Google</option>
+                <option value="friend">От друга</option>
+                <option value="ad-tv">Реклама по ТВ</option>
+                <option value="other">Другое</option>
+            </select>
+        </p>
+    </fieldset>
 </form>
 </body>
 </html>
