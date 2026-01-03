@@ -1,0 +1,41 @@
+.header {
+    border: 5px solid black;
+    margin: 0 auto;
+    outline: 2px double forestgreen;
+    width: 100px;
+    height: 2000px;
+    position: relative;
+}
+
+.block_1 {
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.block_2 {
+    background-color: darkgreen;
+    position: relative;
+    left: 75px;
+    top: 30px;
+    text-align: end;
+    z-index: -1;
+}
+
+.block_3 {
+    background-color: firebrick;
+    position: fixed;
+}
+
+.block_4 {
+    background-color: coral;
+    position: static;
+}
+
+.block_5 {
+    background-color: aqua;
+    position: sticky;
+    left: 299px;
+    top: 60px;
+}
